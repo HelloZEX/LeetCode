@@ -1,0 +1,7 @@
+/*
+* Copyright (c) Twinkle. 2018-2019. All rights reserved.
+* Description: LeetCode 1	https://leetcode-cn.com/problems/two-sum/
+* Author: zhengxinxin
+* Create: 2019-11-23
+*/
+
