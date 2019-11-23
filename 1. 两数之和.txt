@@ -5,3 +5,26 @@
 * Create: 2019-11-23
 */
 
+int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
+    *returnSize = 2;
+	int* result = (int*)malloc(2 * sizeof(int));
+	memset(result, 0, 2 * sizeof(int));
+	int i, j;
+	for (i = 0; i < numsSize; i++)
+	{
+		for (j = 0; (j < numsSize) && (j != i); j++)
+		{
+			if (nums[i] + nums[j] == target)
+			{
+				result[0] = i;
+				result[1] = j;
+				return result;
+			}
+		}
+	}
+	return NULL;
+}
+
+/*
+很明显是需要优化的，复杂度较高。不过这也是最为简单的一种比较方式；
+*/
